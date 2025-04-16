@@ -1,0 +1,11 @@
+header{
+  text-align: center;
+  margin-block: 25px;
+}
+
+@media (width >= 80em) {
+  & .Desktop-only{
+    display: initial;
+    margin-block: 25px 62px;
+  }
+}

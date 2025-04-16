@@ -1,0 +1,19 @@
+.container{
+  border: 1px solid green;
+  width: 20.4375rem;
+  height: auto;
+  margin: 0 auto;
+}
+
+.title-buying{
+  margin-block: 1rem 2.75rem;
+}
+
+.forms{
+  display: grid;
+  flex-direction: column;
+  gap: 1rem;
+  & .input-buying{
+
+  }
+}
