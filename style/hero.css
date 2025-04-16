@@ -1,5 +1,4 @@
 .container{
-  border: 1px solid green;
   width: 20.4375rem;
   height: auto;
   margin: 0 auto;
@@ -11,9 +10,117 @@
 
 .forms{
   display: grid;
-  flex-direction: column;
   gap: 1rem;
-  & .input-buying{
 
+  & input{
+    background-color: var(--always-white);
+    border: 2px solid var(--border-primary);
+    height: 2.75rem;
+    padding: 10px;
+    border-radius: 0.75rem;
+    
+    &:hover{
+      outline: none;
+      border: 2px solid var(--border-hover);
+    }&:focus{
+      outline: none;
+      border: 2px solid var(--color-brand);
+      color: var(--content-primary);
+    }
+  }
+
+  & button{
+    background-color: var(--color-brand);
+    color: var(--always-white);
+    height: 2.75rem;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    margin-block: 0 40px;
+
+    &:hover{
+      background-color: var(--color-brand-hover);
+    }
+  }
+
+  & .options{
+    height: 18rem;
+    overflow: auto;
+
+    & .option{
+      display: flex;
+      align-items: center;
+      
+
+      background-color: var(--always-white);
+      padding: 12px;
+      gap: 12px;
+      margin-block: 12px;
+      border-radius: 12px;
+    
+      & input[type="checkbox"]{
+        appearance: none;
+        outline: none;
+        border: 2px solid var(--border-primary);
+        width: 16px;
+        height: 16px;
+        border-radius: 6px;
+        position: relative;
+
+        &:hover{
+          border: 2px solid var(--border-hover);
+        }
+        &:checked{
+          background-color: var(--color-brand);
+          border: 2px solid var(--color-brand);
+        } 
+        &:checked::after {
+          content: '✔';
+          color: var(--always-white);
+          width: 1rem;
+          height: 1rem;
+          position: absolute;
+          top: 1px;
+          left: 5px;
+        }
+      }
+    }
+
+    & .trash{
+      margin-left: auto;
+      cursor: pointer;
+    }
+  }
+}
+
+.alert{
+  display: flex;
+  align-items: center;
+  background-color: var(--color-danger);
+  padding-inline: 1.2rem;
+  border-radius: 12px;
+  gap: 3px;
+
+  & p{
+    color: var(--always-white);
+  }
+
+  & .cancel{
+    margin-left: auto;
+  }
+}
+
+@media (width >= 80em){
+  .container{
+    width: 39.4375rem;
+  }
+
+  .forms{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .options{
+    display: block;
   }
 }

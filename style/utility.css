@@ -1,3 +1,7 @@
 .Desktop-only{
   display: none;
 }
+
+.Display-none{
+  display: none;
+}
