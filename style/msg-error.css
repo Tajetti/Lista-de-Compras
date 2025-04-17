@@ -1,0 +1,26 @@
+.msg-error{
+  display: flex;
+  align-items: center;
+  margin-block: 1rem 0;
+  background-color: var(--color-danger);
+  border-radius: 1rem;
+  padding: 12px;
+  width: 90%;
+  margin: 20px auto;
+
+  & p{
+    color: var(--always-white);
+    font-size: var(--label);
+    margin-left: 12px;
+  }
+  .cancel{
+    margin-left: auto;
+    cursor: pointer;
+  }
+}
+
+@media (width >= 80em){
+  .msg-error{
+    width: 50%;
+  }
+}

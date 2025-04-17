@@ -19,65 +19,74 @@
   </header>
 
   <section class="main">
-    <div class="container">
-      <div class="link-back">
-        <a href="#"><- Voltar</a>
+    <div class="container-main">
+      <div class="linkToBack">
+        <a href="#"> &larr; Voltar</a>
       </div>
-      <div class="title-buying">
-        <h1>Compras da semana</h1>
-      </div>
-      <div class="forms">
-            <input type="text" placeholder="Adicione um novo item" class="input-buying" id="input-buying">
-            <button class="btn-buying" id="btn-buying">Adicionar item</button>
-    
-        <div class="options">
-        
-          <div class="option">
-              <input type="checkbox" id="Bread">
-              <label for="Bread">Pão de forma</label>
-            <div class="trash">
-              <img src="img/icon/Frame-3.png" alt="" id="trash">
-            </div>
-          </div>
-          
-          <div class="option">
-            <input type="checkbox" id="Coffee">
-            <label for="Bread">Café preto</label>
-            <div class="trash">
-              <img src="img/icon/Frame-3.png" alt="" id="trash">
-            </div>
-          </div>
 
-          <div class="option">
-            <input type="checkbox" id="orangeJuice">
-            <label for="Bread">Suco de laranja</label>
-            <div class="trash">
-              <img src="img/icon/Frame-3.png" alt="" id="trash">
-            </div>
-          </div>
+    <div class="title-buying">
+      <h1>Compras da semana</h1>
+    </div>
 
-          <div class="option">
-            <input type="checkbox" id="cookie">
-            <label for="Bread">Bolacha</label>
-            <div class="trash">
-              <img src="img/icon/Frame-3.png" alt="" id="trash">
-            </div>
-          </div>
-
+    <div class="forms">
+      <form id="form">
+        <input type="text" id="addItem" name="item" placeholder="Adicione um novo item">
+        <button type="submit" id="submit">Adicionar item</button>
+      </form>
+    </div><!--forms-->
+    <div class="list-items">
+      <div class="option">
+        <input type="checkbox" id="item1" name="item1" value="item1">
+        <label for="item1">Pão de forma</label>
+        <div class="trash">
+          <img src="img/icon/Frame-3.png" alt="Lixeira" id="trash">
         </div>
       </div>
 
-      <div class="Display-none">
-        <div class="alert">
-          <img src="img/icon/Icon.png" alt="">
-          <p>O item foi removido da lista</p>
-          <div class="cancel">
-            <img src="img/icon/delete-small.png" alt="">
-          </div>
+      <div class="option">
+        <input type="checkbox" id="item1" name="item1" value="item1">
+        <label for="item1">Café preto</label>
+        <div class="trash">
+          <img src="img/icon/Frame-3.png" alt="Lixeira" id="trash">
         </div>
       </div>
 
+      <div class="option">
+        <input type="checkbox" id="item1" name="item1" value="item1">
+        <label for="item1">Suco de laranja</label>
+        <div class="trash">
+          <img src="img/icon/Frame-3.png" alt="Lixeira" id="trash">
+        </div>
+      </div>
+
+      <div class="option">
+        <input type="checkbox" id="item1" name="item1" value="item1">
+        <label for="item1">Bolacha</label>
+        <div class="trash">
+          <img src="img/icon/Frame-3.png" alt="Lixeira" id="trash">
+        </div>
+      </div>
+
+      <div class="option">
+        <input type="checkbox" id="item1" name="item1" value="item1">
+        <label for="item1">Feijão</label>
+        <div class="trash">
+          <img src="img/icon/Frame-3.png" alt="Lixeira" id="trash">
+        </div>
+      </div>
+    </div><!--list-->
+
+    <div class="Display-none">
+      <div class="msg-error">
+        <img src="img/icon/Icon.png" alt="Lixeira" id="trash">
+        <p>O item foi removido da lista</p>
+        <div class="cancel">
+          <img src="img/icon/delete-small.png" alt="">
+        </div>
+      </div>
     </div>
   </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
