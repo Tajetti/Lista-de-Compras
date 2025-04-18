@@ -1,7 +1,6 @@
 const form = document.getElementById('form');
 const input = document.getElementById('input');
 const list = document.getElementById('lista');
-const trash = document.getElementById('trash-icon');
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -25,5 +24,16 @@ form.addEventListener("submit", (event) => {
     `
   lista.appendChild(li);
   input.value = ""; 
+ 
+  const trashIcon = li.querySelector("#trash-icon");
+  trashIcon.addEventListener("click", () => {
+    li.remove();
 
+    const msgError = document.querySelector(".Display-none")
+    msgError.classList.remove("Display-none")
+
+    setTimeout(() => {
+      msgError.classList.add("Display-none")
+    }, 2000)
+  })
 })
