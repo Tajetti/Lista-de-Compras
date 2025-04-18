@@ -1,7 +1,7 @@
 const form = document.getElementById('form');
 const input = document.getElementById('input');
 const list = document.getElementById('lista');
-const trash = document.querySelector('.trash');
+const trash = document.getElementById('trash-icon');
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -20,9 +20,10 @@ form.addEventListener("submit", (event) => {
       <label for="checkbox">${nomeItem}</label>
     </div>
     <div class="trash">
-      <img src="img/icon/Frame-3.png" alt="Lixeira" class="trash-icon"> 
+      <img src="img/icon/Frame-3.png" alt="Lixeira" id="trash-icon"> 
     </div>
     `
   lista.appendChild(li);
   input.value = ""; 
+
 })
