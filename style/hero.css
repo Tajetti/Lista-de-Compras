@@ -63,7 +63,12 @@
   margin-bottom: 12px;
   color: var(--content-secondary);
 
-  & > input{
+  & .item{
+    display: flex;
+    align-items: center;
+  }
+
+  & input{
     margin-right: 0.625rem;
   
     &[type="checkbox"]{
@@ -87,7 +92,6 @@
       }
     }
   }
-
 
   & .trash{
     margin-left: auto;

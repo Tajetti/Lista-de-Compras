@@ -30,51 +30,65 @@
 
     <div class="forms">
       <form id="form">
-        <input type="text" id="addItem" name="item" placeholder="Adicione um novo item">
+        <input type="text" id="input" name="item" placeholder="Adicione um novo item">
         <button type="submit" id="submit">Adicionar item</button>
       </form>
     </div><!--forms-->
+    
     <div class="list-items">
-      <div class="option">
-        <input type="checkbox" id="item1" name="item1" value="item1">
-        <label for="item1">Pão de forma</label>
-        <div class="trash">
-          <img src="img/icon/Frame-3.png" alt="Lixeira" id="trash">
-        </div>
-      </div>
+      <ul role="list" id="lista">
+        <li class="option">
+          <div class="item">
+            <input type="checkbox" id="item1" name="item1" value="item1">
+            <label for="item1">Café preto</label>
+          </div>
+          <div class="trash">
+            <img src="img/icon/Frame-3.png" alt="Lixeira" class="trash">
+          </div>
+        </li>
 
-      <div class="option">
-        <input type="checkbox" id="item1" name="item1" value="item1">
-        <label for="item1">Café preto</label>
-        <div class="trash">
-          <img src="img/icon/Frame-3.png" alt="Lixeira" id="trash">
-        </div>
-      </div>
+        <li class="option">
+          <div class="item">
+            <input type="checkbox" id="item1" name="item1" value="item1">
+            <label for="item1">Arroz branco</label>
+          </div>
+          <div class="trash">
+            <img src="img/icon/Frame-3.png" alt="Lixeira" class="trash">
+          </div>
+        </li>
 
-      <div class="option">
-        <input type="checkbox" id="item1" name="item1" value="item1">
-        <label for="item1">Suco de laranja</label>
-        <div class="trash">
-          <img src="img/icon/Frame-3.png" alt="Lixeira" id="trash">
-        </div>
-      </div>
+        <li class="option">
+          <div class="item">
+            <input type="checkbox" id="item1" name="item1" value="item1">
+            <label for="item1">Bolacha</label>
+          </div>
+          <div class="trash">
+            <img src="img/icon/Frame-3.png" alt="Lixeira" class="trash">
+          </div>
+        </li>
 
-      <div class="option">
-        <input type="checkbox" id="item1" name="item1" value="item1">
-        <label for="item1">Bolacha</label>
-        <div class="trash">
-          <img src="img/icon/Frame-3.png" alt="Lixeira" id="trash">
-        </div>
-      </div>
+        <li class="option">
+          <div class="item">
+            <input type="checkbox" id="item1" name="item1" value="item1">
+            <label for="item1">Macarrão</label>
+          </div>
+          <div class="trash">
+            <img src="img/icon/Frame-3.png" alt="Lixeira" class="trash">
+          </div>
+        </li>
 
-      <div class="option">
-        <input type="checkbox" id="item1" name="item1" value="item1">
-        <label for="item1">Feijão</label>
-        <div class="trash">
-          <img src="img/icon/Frame-3.png" alt="Lixeira" id="trash">
-        </div>
-      </div>
-    </div><!--list-->
+        <li class="option">
+          <div class="item">
+            <input type="checkbox" id="item1" name="item1" value="item1">
+            <label for="item1">Feijão</label>
+          </div>
+          <div class="trash">
+            <img src="img/icon/Frame-3.png" alt="Lixeira" class="trash">
+          </div>
+        </li>
+
+      </ul>
+    </div> <!-- LIST-ITEMS -->
 
     <div class="Display-none">
       <div class="msg-error">
